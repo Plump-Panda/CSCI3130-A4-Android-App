@@ -1,0 +1,13 @@
+
+o
+java:S3008"YRename this field "MINIMUM_POINTS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ×³Ž
+f
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(Îâðèþÿÿÿÿ
+<	java:S131""Add a default case to this switch.(Îâðèþÿÿÿÿ
+n	java:S116"YRename this field "TRANSFER_POINT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÆÈ™
+7
+java:S1170"!Make this final field static too.(Ù£¼Õ
+7
+java:S1170"!Make this final field static too.(ßÆÈ™
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(«–¨†
+g	java:S116"RRename this field "CASH_IN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù£¼Õ
