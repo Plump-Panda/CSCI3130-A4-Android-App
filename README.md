@@ -1,4 +1,4 @@
-# CSCI-3130-A4-Sol-Winter 2022
+# CSCI3130-Winter2022-A4
 
 The base code for A4!
 
