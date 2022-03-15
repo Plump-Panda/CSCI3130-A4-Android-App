@@ -6,14 +6,13 @@ public class MasterCard implements ICreditCard {
 
     @Override
     public boolean payInCredit(int amount) {
-        //buggy code + missing code
         System.out.println("Paid by Mastercard: " + amount);
-        return false;
+        paidAmount = amount;
+        return true;
     }
 
     @Override
     public int getPaidAmount() {
-        //buggy code
-        return 0;
+        return paidAmount;
     }
 }

@@ -4,18 +4,17 @@ public class SmartCardAdapter implements IDebitCard {
     ICreditCard creditCard;
 
     public SmartCardAdapter(ICreditCard creditCard) {
-        //required code is missing
+        this.creditCard = creditCard;
     }
 
     @Override
     public boolean pay(String paymentType, int amount) {
-        //missing code + buggy code
+        creditCard.payInCredit(amount);
         return true;
     }
 
     @Override
     public int getPaidAmount() {
-        //buggy code
-        return 0;
+        return creditCard.getPaidAmount();
     }
 }
