@@ -4,11 +4,10 @@ public class Membership {
     DiscountCalculationRule rule;
 
     public Membership(DiscountCalculationRule rule) {
-        //required code is missing
+        this.rule = rule;
     }
 
     protected DiscountCalculationRule getRule() {
-        //buggy code
-        return null;
+        return rule;
     }
 }

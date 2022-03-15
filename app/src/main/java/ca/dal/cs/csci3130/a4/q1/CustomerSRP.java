@@ -31,7 +31,6 @@ public class CustomerSRP implements ICustomer {
     }
 
     public double calculateDiscount() {
-        //buggy code
-        return 0;
+        return this.getMembership().getRule().calculate(this);
     }
 }
