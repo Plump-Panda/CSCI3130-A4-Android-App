@@ -7,12 +7,14 @@ public class BuyProduceTransaction implements Transaction {
     int MINIMUM_POINTS = 500;
 
     public BuyProduceTransaction(int points2Buy) {
-        //required code is missing
+        this.points2Buy = points2Buy;
     }
 
     @Override
     public void performTransaction(ILoyaltyCard card) {
-        //required code is missing
+        if(!isLowPoints(card.getCurrentPoints())) {
+            card.setCurrentPoints(card.getCurrentPoints() - points2Buy);
+        }
     }
 
     public boolean isLowPoints(int currentPoints) {

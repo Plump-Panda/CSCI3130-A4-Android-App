@@ -5,11 +5,11 @@ public class SmartLoyaltyCard implements ILoyaltyCard {
     int currentPoints;
 
     public SmartLoyaltyCard(int points) {
-        //required code is missing
+        this.currentPoints = points;
     }
 
     public void performTransaction(Transaction transaction) {
-        //required code is missing
+        transaction.performTransaction(this);
     }
 
     public int getCurrentPoints() {

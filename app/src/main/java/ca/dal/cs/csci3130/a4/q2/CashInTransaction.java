@@ -5,11 +5,13 @@ public class CashInTransaction implements Transaction {
     int MINIMUM_POINTS = 500;
 
     public CashInTransaction(int point2Cash) {
-        //required code is missing
+        this.point2Cash = point2Cash;
     }
 
     public void performTransaction(ILoyaltyCard card) {
-        //required code is missing
+        if(!isLowPoints(card.getCurrentPoints())){
+            card.setCurrentPoints(card.getCurrentPoints() - point2Cash);
+        }
     }
 
     public boolean isLowPoints(int currentPoints) {
