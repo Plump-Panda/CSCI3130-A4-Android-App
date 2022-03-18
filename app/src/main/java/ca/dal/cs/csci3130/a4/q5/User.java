@@ -7,17 +7,18 @@ public class User extends Observer {
     String currentMessage;
 
     public User(IPreferenceManager manager, int bidIncrement) {
-        //required code is missing
+        manager.attach(this);
+        this.bidIncrement = bidIncrement;
     }
 
     @Override
     public void update(int newPrice) {
-        //required code is missing
+        currentPrice = newPrice + bidIncrement;
     }
 
     @Override
     public void update(String message) {
-        //required code is missing
+        currentMessage = message;
     }
 
     @Override

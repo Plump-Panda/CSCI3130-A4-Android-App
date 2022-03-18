@@ -9,20 +9,22 @@ public class TaskPreferenceManager implements IPreferenceManager {
 
     @Override
     public void attach(Observer user) {
-        //required code is missing
+        users.add(user);
     }
 
     public int getPrice() {
-        //buggy code
-        return 0;
+        return price;
     }
 
     public void setPrice(int currentPrice) {
-        //required code is missing
+        price = currentPrice;
+        notifyAllUsers();
     }
 
     @Override
     public void notifyAllUsers() {
-        //required code is missing
+        for(int i = 0; i < users.size(); i++){
+            users.get(i).update(price);
+        }
     }
 }
