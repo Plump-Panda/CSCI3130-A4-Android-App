@@ -3,8 +3,13 @@ package ca.dal.cs.csci3130.a4.q3;
 public class SmallTaskFactory implements ItemFactory {
     @Override
     public Item getItem(String itemType) {
-        //missing code + buggy code
-        return null;
+        if(itemType.equals(ItemConstants.WALK_A_DOG)){
+            return new WalkADog();
+        }else if(itemType.equals(ItemConstants.MOW_THE_LAWN)){
+            return new MowTheLawn();
+        }else{
+            return new PickUpGrocery();
+        }
     }
 
 }
